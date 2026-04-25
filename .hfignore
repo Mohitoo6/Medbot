@@ -1,0 +1,21 @@
+# Virtual Environment
+venv/
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Massive PDFs (Not needed since chroma_db is pre-built)
+*.pdf
+
+# Logs
+server.log
+*.log
+
+# Git
+.git/
+.gitignore
+.github/

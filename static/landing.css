@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'Compressa VF';
+    src: url('https://res.cloudinary.com/dr6lvwubh/raw/upload/v1529908256/CompressaPRO-GX.woff2') format('woff2');
+    font-style: normal;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.glow-bg {
+    position: fixed;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(124,92,252,0.12) 0%, rgba(0,229,160,0.06) 40%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.viewport {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    width: 100%;
+    z-index: 20;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: -0.02em;
+    background: linear-gradient(180deg, #FFFFFF 0%, #A1A1AA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.launch-btn-small {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 99px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.launch-btn-small:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.hero-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.hero-subtitle {
+    color: #A1A1AA;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 24px;
+}
+
+.hero-desc {
+    color: #8A8A8E;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+/* Text Pressure Styles */
+.text-pressure-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.text-pressure-title {
+    font-family: 'Compressa VF', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    user-select: none;
+    white-space: nowrap;
+    font-weight: 100;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.text-pressure-title span {
+    display: inline-block;
+    transition: font-variation-settings 0.1s linear, opacity 0.1s linear;
+}
+
+.launch-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 36px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000;
+    background: #FFFFFF;
+    border-radius: 99px;
+    text-decoration: none;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.1), 0 8px 30px rgba(255,255,255,0.15);
+    transition: all 0.3s ease;
+}
+
+.launch-btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.2), 0 12px 40px rgba(255,255,255,0.25);
+}
+
+@media (max-width: 768px) {
+    .hero-desc { font-size: 1rem; }
+    .top-nav { padding: 20px; }
+}
